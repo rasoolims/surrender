@@ -1,0 +1,107 @@
+\documentclass[14pt,oneside]{memoir} % Font size
+
+
+\input{structure.tex} 
+
+\title{مسیر سرسپردگی
+}
+\author{ر. دیوید کولیج
+}
+
+\date{}
+
+\newcommand{\edition}{نسخهٔ آزمایشی} % Book edition
+
+%----------------------------------------------------------------------------------------
+\newcommand{\sep}{\begin{center}
+  \tiny $\diamondsuit$~$\diamondsuit$~$\diamondsuit$
+\end{center}}
+
+\begin{document}
+
+  \frontmatter
+  
+
+  
+\clearpage{}
+%\newpage
+\thispagestyle{empty} 
+\maketitle
+\newpage % Make sure the following content is on a new page
+
+  \clearpage{}
+\thispagestyle{empty} 
+\begin{center}
+	\includegraphics[height=0.3\textheight]{besm}
+\end{center}
+\newpage % Make sure the following content is on a new page
+
+\begin{KeepFromToc}
+	\tableofcontents
+\end{KeepFromToc}
+%\input{tex/poem}
+\chapter*{مقدمهٔ مترجم}
+\addcontentsline{toc}{chapter}{مقدمهٔ مترجم}
+ \justify
+ \input{tex/trans_intro}
+
+
+\chapter*{}
+\input{tex/dedication}
+  
+ \chapter*{}
+ \input{tex/ack}
+ 
+
+ 
+ \mainmatter
+
+ \chapter*{مقدمه}
+ \addcontentsline{toc}{chapter}{مقدمه}
+ \justify
+  \setcounter{page}{1}
+ \input{tex/introduction}
+   
+\chapter*{دین و خداوند}
+\addcontentsline{toc}{chapter}{دین و خداوند}
+ \justify
+ \input{tex/religion-and-god}
+
+   
+\chapter*{دیدار ناگزیر}
+\addcontentsline{toc}{chapter}{دیدار ناگزیر}
+\justify
+\input{tex/facing-inevitable}
+
+  
+\chapter*{مسیر سرسپردگی}
+\addcontentsline{toc}{chapter}{مسیر سرسپردگی}
+\justify
+\input{tex/path-of-Islam}
+
+
+
+\chapter*{پنج گام تقوا}
+\addcontentsline{toc}{chapter}{پنج گام تقوا}
+\justify
+\input{tex/five-levels-taqwa}
+
+\chapter*{سخن پایانی}
+\addcontentsline{toc}{chapter}{سخن پایانی}
+\justify
+\input{tex/Conclusion}
+
+\chapter*{دربارهٔ نویسنده}
+\addcontentsline{toc}{chapter}{دربارهٔ نویسنده}
+\justify
+\input{tex/about_author}
+%\begin{quote}
+%\begin{flushleft}
+%\end{flushleft}
+
+%\end{quote}
+
+%
+%\newpage
+	
+\end{document}
