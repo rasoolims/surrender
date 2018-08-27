@@ -1,4 +1,5 @@
 \documentclass[14pt,oneside]{memoir} % Font size
+\usepackage{pdfpages}
 
 
 \input{structure.tex} 
@@ -18,15 +19,13 @@
 \end{center}}
 
 \begin{document}
+\clearpage{}
+\includepdf[pages=-,width=\paperwidth,height=\paperheight]{cover.pdf}
 
   \frontmatter
   
-
-  
-\clearpage{}
-%\newpage
 \thispagestyle{empty} 
-\maketitle
+\maketitle\clearpage{}
 \newpage % Make sure the following content is on a new page
 
   \clearpage{}
